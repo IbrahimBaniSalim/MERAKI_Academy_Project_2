@@ -1,4 +1,28 @@
-*{
+body{
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
+}
+header{
+    background-color: #E3A772;
+    height: 60px;
+   
+    border-bottom: 1px solid black;
+}
+#h1h{
+    margin:10px 0px 0px 5px;
+    display: inline;
+    
+}
+.sing{
+    float: right;
+    margin: 10px 15px 0px 0px;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #44413C;
+    color:#fff;
+}
+.sing:hover{
+    background-color:#948D83;
 }
