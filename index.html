@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>E-Commerce</title>
   </head>
   <body>
-      <!-- header section -->
+    <!-- header section -->
     <header>
       <h1 id="h1h">E-Shope</h1>
-      
+
       <button id="Sing_in" class="sing">Sing in</button>
       <button id="Sing_up" class="sing">Sing up</button>
       <button id="Sing_up" class="sing">dark mode</button>
@@ -35,67 +36,73 @@
       </ul>
     </div>
     <div class="contanier">
-    <!-- form log in  -->
-    <div class="login-form">
-      <label for="username">Enter UserName</label>
-      <input
-        type="text"
-        name="username"
-        id="name"
-        placeholder="please enter UserName"
-        class="in1"
-      />
+      <!-- form log in  -->
+      <div class="login-form">
+        <label for="username">Enter UserName</label>
+        <input
+          type="text"
+          name="username"
+          id="name"
+          placeholder="please enter UserName"
+          class="in1"
+        />
+        <br />
+        <label for="username">Enter Password</label>
+        <input
+          type="password"
+          name="password"
+          id="pws"
+          placeholder="please enter password"
+          class="in1"
+        />
+        <br />
+        <button id="btn2">Submit</button>
+      </div>
       <br />
-      <label for="username">Enter Password</label>
-      <input
-        type="password"
-        name="password"
-        id="pws"
-        placeholder="please enter password"
-        class="in1"
-      />
-      <br>
-      <button id="btn2">Submit</button>
-    </div>
-    <br />
-    <!-- register form -->
-    <div class="reg-form">
-      <input type="text" name="name" id="name" placeholder="Enter UserName" class="in1" />
-      <br>
-      <input
-        type="password"
-        name="password"
-        id="pws1"
-        placeholder="Enter your password"
-        class="in1"
-      />
-      <br>
-      <input
-        type="password"
-        name="password"
-        id="pws2"
-        placeholder="confirm your password"
-        class="in1"
-      />
-      <br>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Enter your email"
-        class="in1"
-      />
-      <br>
-      <input
-        type="tel"
-        name="telephone"
-        id="tel"
-        placeholder="enter your mobile phone"
-        class="in1"
-      />
-      <br>
-      <button id="btn3" >Register</button>
-    </div>
+      <!-- register form -->
+      <div class="reg-form">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter UserName"
+          class="in1"
+        />
+        <br />
+        <input
+          type="password"
+          name="password"
+          id="pws1"
+          placeholder="Enter your password"
+          class="in1"
+        />
+        <br />
+        <input
+          type="password"
+          name="password"
+          id="pws2"
+          placeholder="confirm your password"
+          class="in1"
+        />
+        <br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          class="in1"
+        />
+        <br />
+        <input
+          type="tel"
+          name="telephone"
+          id="tel"
+          placeholder="enter your mobile phone"
+          class="in1"
+        />
+        <br />
+        <button id="btn3">Register</button>
+      </div>
     </div>
     <!--add catagories section-->
     <div class="catago">
@@ -180,7 +187,7 @@
     </div>
     <footer>
       <!-- footer section  -->
-      <p>copy</p>
+      <p>all theme &copy; for MERAKIAcademy</p>
     </footer>
   </body>
 </html>
