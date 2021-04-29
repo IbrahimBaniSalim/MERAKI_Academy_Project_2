@@ -6,8 +6,8 @@ body{
 header{
     background-color: #E3A772;
     height: 60px;
-   
     border-bottom: 1px solid black;
+    margin-bottom: 0px;
 }
 #h1h{
     margin:10px 0px 0px 5px;
@@ -26,3 +26,55 @@ header{
 .sing:hover{
     background-color:#948D83;
 }
+
+ul{
+    position:sticky;
+    top: 0px;
+    background-color: burlywood;
+    display: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+ float: left;
+ /* border-right: 1px solid snow; */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  li a:hover {
+    background-color: #111;
+  }
+  .act{
+      background-color: crimson;
+  }
+  #search{
+    /* float: right; */
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    /* margin-right: 16px; */
+    font-size: 17px;
+    margin-left: 300px;
+  }
+  #btn1{
+       /* float: right;  */
+       /* margin-left: 200px; */
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    /* margin-right: 16px; */
+    font-size: 17px; 
+  }
+  #btn1:hover{
+      background-color: tomato;
+  }
