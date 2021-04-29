@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    /* position: relative; */
     /* box-sizing: border-box; */
 }
 header{
@@ -26,10 +27,13 @@ header{
 .sing:hover{
     background-color:#948D83;
 }
-
+.nav{
+    position: sticky;
+    top:0;
+}
 ul{
-    position:sticky;
-    top: 0px;
+    /* position:static;
+    top: 0px; */
     background-color: burlywood;
     display: fixed;
     list-style-type: none;
@@ -78,3 +82,64 @@ li a {
   #btn1:hover{
       background-color: tomato;
   }
+.contanier{
+    background-color: royalblue;
+    display: flex;
+    justify-content:space-around;
+}
+  .reg-form{
+      /* margin-top:5px; */
+      border: 1px solid black;
+
+  }
+  .login-form{
+/* margin-top: 5px; */
+border: 1px solid black;
+  }
+.in1{
+    /* width: 60px; */
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+#btn2,#btn3{
+   
+        /* float: right;  */
+        /* margin-left: 200px; */
+     padding: 6px;
+     border: none;
+     margin-top: 8px;
+     /* margin-right: 16px; */
+     font-size: 17px; 
+     background-color: salmon;
+     margin-left: 100px;
+  
+}
+#btn2{
+    margin-left: 200px;
+}
+#btn3:hover{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+
+#btn2:hover{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+img{
+    width: 400px;
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
