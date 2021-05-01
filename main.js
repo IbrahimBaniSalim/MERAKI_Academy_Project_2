@@ -7,15 +7,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const reg = $(".reg-form");
   const log = $(".login-form");
-  const item = $(".item-1");
+  const item1 = $(".item-1");
   const footer = $("footer");
   const catag = $(".catago");
-  const singIn=$("#Sing_in")
-  const singup=$("#Sing_up")
-  const nave=$(".nav")
+  const singIn = $("#Sing_in");
+  const singUp = $("#Sing_up");
+  const nave = $(".nav");
+  const item2 = $(".item-2");
   contan.hide();
+  item1.hide();
+  item2.hide();
+  let t = true;
   dark.on("click", () => {
-    let t = true;
     if (t) {
       catag.css({
         color: "#fff",
@@ -60,36 +63,85 @@ document.addEventListener("DOMContentLoaded", () => {
       t = false;
     } else {
       t = true;
-      dark.off("click", "");
+      catag.css({
+        color: "#fff",
+        "background-color": "#000",
+      });
+      body.css({
+        color: "#fff",
+        "background-color": "#000",
+      });
+      dark.css({
+        color: "#fff",
+        "background-color": "#000",
+      });
+      header.css({
+        color: "#fff",
+        "background-color": "#000",
+      });
+      ul.css({
+        color: "#fff",
+        "background-color": "#000",
+      });
+      contan.css({
+        color: "#fff",
+        "background-color": "#000",
+      });
+      reg.css({
+        color: "#fff",
+        "background-color": "#000",
+      });
+      log.css({
+        color: "#fff",
+        "background-color": "#000",
+      });
+      item.css({
+        color: "#fff",
+        "background-color": "#000",
+      });
+      footer.css({
+        color: "#fff",
+        "background-color": "#000",
+      });
     }
   });
 
-
-singIn.on("click",()=>{
-   
+  singIn.on("click", () => {
     catag.hide();
-    item.hide();
+    contan.show();
     reg.hide();
-   
-});
-singup.on("click",()=>{
-   
+    log.show();
+  });
+  singUp.on("click", () => {
     catag.hide();
-    item.hide();
+    contan.show();
     log.hide();
-   
-});
-   // singIn.toggle()
-const fashion=$(".Fashion");
-fashion.on("click",()=>{
-
+    reg.show()
+  });
+  // singIn.toggle()
+  const fashion = $(".Fashion");
+  fashion.on("click", () => {
     catag.hide();
+    item1.show();
+  });
+
+  const toy = $(".toys");
+  toy.on("click", () => {
+    catag.hide();
+    item2.show();
+  });
+  const home=$(".act")
+  home.on("click", ()=>{
+  header.show();
+  nave.show();
+  catag.show();
+  footer.show();
+  });
 
 
 
 
 
-})
 
 
 
@@ -109,4 +161,29 @@ fashion.on("click",()=>{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 });

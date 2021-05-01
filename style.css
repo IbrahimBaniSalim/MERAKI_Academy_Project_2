@@ -135,7 +135,7 @@ img {
   border-radius: 10px;
   margin-top: 5px;
 }
-.item-1{
+.item-1,.item-2{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -218,6 +218,73 @@ p{
   background-color: #623627;
   color: #fff;
   cursor: pointer;
+}
+.item-2 .toy1 button{
+  /* float: right;  */
+ /* margin-left: 200px; */
+ padding: 6px;
+ border: none;
+ margin-top: 8px;
+ /* margin-right: 16px; */
+ font-size: 17px;
+ background-color: #a77142;
+ /* margin-left: 100px; */
+}
+.item-2 .toy1 button:hover{
+ color: #fff;
+ background-color: burlywood;
+}
+.item-2 .toy2 button{
+ /* float: right;  */
+/* margin-left: 200px; */
+padding: 6px;
+border: none;
+margin-top: 8px;
+/* margin-right: 16px; */
+font-size: 17px;
+background-color: #a77142;
+/* margin-left: 100px; */
+}
+.item-2 .toy2 button:hover{
+background-color: burlywood;
+color: #fff;
+}
+button{
+ cursor: pointer;
+}
+.item-2 .toy3 button{
+ /* float: right;  */
+/* margin-left: 200px; */
+padding: 6px;
+border: none;
+margin-top: 8px;
+/* margin-right: 16px; */
+font-size: 17px;
+background-color: #a77142;
+/* margin-left: 100px; */
+}
+.item-2 .toy3 button:hover{
+background-color: burlywood;
+color: #fff;
+}
+.item-2 .toy4 button{
+ /* float: right;  */
+/* margin-left: 200px; */
+padding: 6px;
+border: none;
+margin-top: 8px;
+/* margin-right: 16px; */
+font-size: 17px;
+background-color: #a77142;
+margin-bottom: 5px;
+/* margin-left: 100px; */
+}
+.item-2 .toy4 button:hover{
+background-color: burlywood;
+color: #fff;
+}
+p{
+ text-align: justify;
 }
 footer {
   background-color: #44413C;
