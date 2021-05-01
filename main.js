@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const footer = $("footer");
   const catag = $(".catago");
   const singIn=$("#Sing_in")
+  const singup=$("#Sing_up")
   const nave=$(".nav")
+  contan.hide();
   dark.on("click", () => {
     let t = true;
     if (t) {
@@ -64,15 +66,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 singIn.on("click",()=>{
-    body.hide();
-    header.show();
-    nave.show();
-    log.show();
-
+   
+    catag.hide();
+    item.hide();
+    reg.hide();
    
 });
+singup.on("click",()=>{
+   
+    catag.hide();
+    item.hide();
+    log.hide();
+   
+});
+   // singIn.toggle()
+const fashion=$(".Fashion");
+fashion.on("click",()=>{
+
+    catag.hide();
 
 
+
+
+
+})
 
 
 
