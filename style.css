@@ -249,6 +249,10 @@ background-color: #a77142;
 background-color: burlywood;
 color: #fff;
 }
+.item-3{
+  display: flex;
+  justify-content: space-between;
+}
 button{
  cursor: pointer;
 }
@@ -283,6 +287,7 @@ margin-bottom: 5px;
 background-color: burlywood;
 color: #fff;
 }
+
 p{
  text-align: justify;
 }

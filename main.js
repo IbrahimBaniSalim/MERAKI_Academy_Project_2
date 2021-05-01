@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   contan.hide();
   item1.hide();
   item2.hide();
+  
   let t = true;
   dark.on("click", () => {
     if (t) {
@@ -52,10 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         color: "#fff",
         "background-color": "#000",
       });
-      item.css({
-        color: "#fff",
-        "background-color": "#000",
-      });
+    //  
       footer.css({
         color: "#fff",
         "background-color": "#000",
@@ -64,12 +62,12 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       t = true;
       catag.css({
-        color: "#fff",
-        "background-color": "#000",
+        color: "#000",
+        "background-color": "#fff",
       });
       body.css({
-        color: "#fff",
-        "background-color": "#000",
+        color: "#000",
+        "background-color": "#fff",
       });
       dark.css({
         color: "#fff",
@@ -77,31 +75,28 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       header.css({
         color: "#fff",
-        "background-color": "#000",
+        "background-color": "#e3a772",
       });
       ul.css({
         color: "#fff",
-        "background-color": "#000",
+        "background-color": "burlywood",
       });
       contan.css({
         color: "#fff",
-        "background-color": "#000",
+        "background-color": "#a77142",
       });
       reg.css({
         color: "#fff",
-        "background-color": "#000",
+        "background-color": "#159863",
       });
       log.css({
         color: "#fff",
-        "background-color": "#000",
+        "background-color": "#252632",
       });
-      item.css({
-        color: "#fff",
-        "background-color": "#000",
-      });
+     
       footer.css({
         color: "#fff",
-        "background-color": "#000",
+        "background-color": "#121212",
       });
     }
   });
@@ -137,6 +132,82 @@ document.addEventListener("DOMContentLoaded", () => {
   catag.show();
   footer.show();
   });
+ const array=[
+    {
+        name: 'angular',
+        img: './images/angular.svg',
+        des:'this my elements',
+        price:'30$'
+
+      },
+      {
+        name: 'aurelia',
+        img: './images/images.jpg',
+        des:'this my elements',
+        price:'30$'
+
+      },
+      {
+        name: 'backbone',
+        img: './images/backbone.svg',
+        des:'this my elements',
+        price:'30$'
+      },
+      {
+        name: 'ember',
+        img: './images/ember.svg',
+        des:'this my elements',
+        price:'30$'
+      },
+ ]
+ 
+ const item3=$('.item-3')
+ 
+ for (let i = 0; i < array.length; i++) {
+    const Elec= $(`<div> </div>`);
+    Elec.addClass(`Elce${i}`)
+    const src=array[i].img
+    const img=$(`<img/>`)
+    img.attr("src", src);
+    Elec.append(img);
+    Elec.append(array[i].des);
+    Elec.append(array[i].price);
+   const btn=$(`<button>add To Carde</button>`)
+   btn.css({
+        /* float: right;  */
+ /* margin-left: 200px; */
+ 'padding':' 6px',
+ 'border':'none',
+'margin-top':'8px',
+ /* margin-right: 16px; */
+ 'font-size':' 17px;',
+'background-color': '#a77142',
+ /* margin-left: 100px; */
+   })
+//    $("btn").hover(()=>{
+//     $(this).css("background-color", "#a77142");
+//     }, ()=>{
+//     $(this).css("color", "#fff");
+//   });
+   Elec.appendTo(item3)
+ Elec.css({
+ })
+ }
+item3.hide();
+
+const three = $(".Media");
+  three.on("click", () => {
+    catag.hide();
+    item3.show();
+  });
+
+
+ 
+//  const three = $(".Elec&Media");
+//  three.on("click", () => {
+//    catag.hide();
+//    item3.show();
+//  });
 
 
 
@@ -182,8 +253,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
-  
 });
