@@ -82,19 +82,22 @@ li a:hover {
   background-color: tomato;
 }
 .contanier {
-  background-color: royalblue;
+  background-color: #a77142;
   display: flex;
   justify-content: space-around;
+  margin:0px;
 }
 .reg-form {
   /* margin-top:5px; */
   border: 1px solid black;
-  background-color: cornflowerblue;
+  background-color: #623813;
+  color: #fff;
 }
 .login-form {
   /* margin-top: 5px; */
   border: 1px solid black;
-  background-color: crimson;
+  background-color: #E5CDB8;
+  color: #341E1E;
 }
 .in1 {
   /* width: 60px; */
@@ -132,17 +135,94 @@ img {
   border-radius: 10px;
   margin-top: 5px;
 }
-
+.item-1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color:#D8AC9D;
+  /* color: #fff; */
+}
+.item-1 .fa1 button{
+   /* float: right;  */
+  /* margin-left: 200px; */
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  /* margin-right: 16px; */
+  font-size: 17px;
+  background-color: #a77142;
+  /* margin-left: 100px; */
+}
+.item-1 .fa1 button:hover{
+  color: #fff;
+  background-color: burlywood;
+}
+.item-1 .fa2 button{
+  /* float: right;  */
+ /* margin-left: 200px; */
+ padding: 6px;
+ border: none;
+ margin-top: 8px;
+ /* margin-right: 16px; */
+ font-size: 17px;
+ background-color: #a77142;
+ /* margin-left: 100px; */
+}
+.item-1 .fa2 button:hover{
+ background-color: burlywood;
+ color: #fff;
+}
+button{
+  cursor: pointer;
+}
+.item-1 .fa3 button{
+  /* float: right;  */
+ /* margin-left: 200px; */
+ padding: 6px;
+ border: none;
+ margin-top: 8px;
+ /* margin-right: 16px; */
+ font-size: 17px;
+ background-color: #a77142;
+ /* margin-left: 100px; */
+}
+.item-1 .fa3 button:hover{
+ background-color: burlywood;
+ color: #fff;
+}
+.item-1 .fa4 button{
+  /* float: right;  */
+ /* margin-left: 200px; */
+ padding: 6px;
+ border: none;
+ margin-top: 8px;
+ /* margin-right: 16px; */
+ font-size: 17px;
+ background-color: #a77142;
+ margin-bottom: 5px;
+ /* margin-left: 100px; */
+}
+.item-1 .fa4 button:hover{
+ background-color: burlywood;
+ color: #fff;
+}
+p{
+  text-align: justify;
+}
 .catago {
   display: flex;
   /* height: 400px;
     width: 400px; */
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: coral;
+  background-color: #623627;
+  color: #fff;
+  cursor: pointer;
 }
 footer {
-  background-color: darkolivegreen;
+  background-color: #44413C;
   color: floralwhite;
   height: 50px;
+  text-align: center;
+  margin: 0px;
 }
