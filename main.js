@@ -3,28 +3,30 @@ document.addEventListener("DOMContentLoaded", () => {
   const dark = $("#dark");
   const header = $("header");
   const ul = $("ul");
-  const contan = $(".contanier");
-
   const reg = $(".reg-form");
   const log = $(".login-form");
   const item1 = $(".item-1");
-  const footer = $("footer");
-  const catag = $(".catago");
+  const item2 = $(".item-2");
+  const footer = $(".footer");
+  const catagories = $(".catagories");
   const singIn = $("#Sing_in");
   const singUp = $("#Sing_up");
   const nave = $(".nav");
-  const item2 = $(".item-2");
-  contan.hide();
-  item1.hide();
-  item2.hide();
+  const card=$(".card")
   
+    item1.hide();
+    item2.hide();
+    reg.hide();
+    log.hide();
+
   let t = true;
   dark.on("click", () => {
     if (t) {
-      catag.css({
-        color: "#fff",
+        catagories.css({
+        color: "#000",
         "background-color": "#000",
       });
+     
       body.css({
         color: "#fff",
         "background-color": "#000",
@@ -41,10 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         color: "#fff",
         "background-color": "#000",
       });
-      contan.css({
-        color: "#fff",
-        "background-color": "#000",
-      });
+     
       reg.css({
         color: "#fff",
         "background-color": "#000",
@@ -57,21 +56,21 @@ document.addEventListener("DOMContentLoaded", () => {
       footer.css({
         color: "#fff",
         "background-color": "#000",
+        
       });
       t = false;
     } else {
       t = true;
-      catag.css({
+      catagories.css({
         color: "#000",
         "background-color": "#fff",
       });
       body.css({
-        color: "#000",
-        "background-color": "#fff",
+        "background-color": "floralwhite",
       });
       dark.css({
-        color: "#fff",
-        "background-color": "#000",
+        color: "#000",
+        "background-color": "#fff",
       });
       header.css({
         color: "#fff",
@@ -81,26 +80,23 @@ document.addEventListener("DOMContentLoaded", () => {
         color: "#fff",
         "background-color": "burlywood",
       });
-      contan.css({
-        color: "#fff",
-        "background-color": "#a77142",
-      });
+     ;
       reg.css({
-        color: "#fff",
-        "background-color": "#159863",
+        color: "#000",
+        "background-color": "#f1f1f1",
       });
       log.css({
-        color: "#fff",
-        "background-color": "#252632",
+        color: "#000",
+        "background-color": "##f1f1f1",
       });
      
       footer.css({
         color: "#fff",
-        "background-color": "#121212",
+        "background-color": "#44413C",
       });
     }
   });
-
+/**************************************************************************************** */
   singIn.on("click", () => {
     catag.hide();
     contan.show();
