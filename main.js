@@ -98,60 +98,59 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 /**************************************************************************************** */
   singIn.on("click", () => {
-    catag.hide();
-    contan.show();
+    catagories.hide();
+    
     reg.hide();
     log.show();
   });
   singUp.on("click", () => {
-    catag.hide();
-    contan.show();
+    catagories.hide();
     log.hide();
     reg.show()
   });
-  // singIn.toggle()
+  /**************************************************************************************** */
   const fashion = $(".Fashion");
   fashion.on("click", () => {
-    catag.hide();
+    catagories.hide();
     item1.show();
   });
 
   const toy = $(".toys");
   toy.on("click", () => {
-    catag.hide();
+    catagories.hide();
     item2.show();
   });
   const home=$(".act")
   home.on("click", ()=>{
   header.show();
   nave.show();
-  catag.show();
-  footer.show();
+  catagories.show();
+
   });
  const array=[
     {
-        name: 'angular',
-        img: './images/angular.svg',
+        name: 'electronic',
+        img: './images/e1.png',
         des:'this my elements',
         price:'30$'
 
       },
       {
         name: 'aurelia',
-        img: './images/images.jpg',
+        img: './images/e2.jpg',
         des:'this my elements',
         price:'30$'
 
       },
       {
-        name: 'backbone',
-        img: './images/backbone.svg',
+        name: 'electronic',
+        img: './images/e3.jpg',
         des:'this my elements',
         price:'30$'
       },
       {
-        name: 'ember',
-        img: './images/ember.svg',
+        name: 'electronic',
+        img: './images/e4.jpg',
         des:'this my elements',
         price:'30$'
       },
@@ -161,49 +160,112 @@ document.addEventListener("DOMContentLoaded", () => {
  
  for (let i = 0; i < array.length; i++) {
     const Elec= $(`<div> </div>`);
-    Elec.addClass(`Elce${i}`)
+    const h1=$(`<h1> </h1>`);
+    const p=$(`<p> </p>`)
+    const p1=$(`<p> </p>`)
+    Elec.addClass(`card`)
     const src=array[i].img
     const img=$(`<img/>`)
+    img.css({
+        'width':'300px',
+         'height':'250px'
+    })
     img.attr("src", src);
+    h1.append(array[i].name);
+    Elec.append(h1);
     Elec.append(img);
-    Elec.append(array[i].des);
-    Elec.append(array[i].price);
-   const btn=$(`<button>add To Carde</button>`)
-   btn.css({
-        /* float: right;  */
- /* margin-left: 200px; */
- 'padding':' 6px',
- 'border':'none',
-'margin-top':'8px',
- /* margin-right: 16px; */
- 'font-size':' 17px;',
-'background-color': '#a77142',
- /* margin-left: 100px; */
-   })
-//    $("btn").hover(()=>{
-//     $(this).css("background-color", "#a77142");
-//     }, ()=>{
-//     $(this).css("color", "#fff");
-//   });
+    p.append(array[i].price);
+    p.addClass(`price`)
+    Elec.append(p);
+
+    p1.append(array[i].des);
+    Elec.append(p1);
+    
+   const btn=$(`<p><button>add To Carde</button></P>`)
+   btn.addClass(`card`)
+   Elec.append(btn);
    Elec.appendTo(item3)
- Elec.css({
- })
+ 
  }
 item3.hide();
 
 const three = $(".Media");
   three.on("click", () => {
-    catag.hide();
+    catagories.hide();
     item3.show();
+  });
+/************************************************************************** */
+const array1=[
+    {
+        name: 'personal care',
+        img: './images/p1.jpg',
+        des:'this my elements',
+        price:'30$'
+
+      },
+      {
+        name: 'personal care',
+        img: './images/p2.jpg',
+        des:'this my elements',
+        price:'30$'
+
+      },
+      {
+        name: 'personal care',
+        img: './images/p3.jpg',
+        des:'this my elements',
+        price:'30$'
+      },
+      {
+        name: 'personal care',
+        img: './images/p4.jpg',
+        des:'this my elements',
+        price:'30$'
+      },
+ ]
+ 
+ const item4=$('.item-4')
+ 
+ for (let i = 0; i < array1.length; i++) {
+    const personal= $(`<div> </div>`);
+    const h1=$(`<h1> </h1>`);
+    const p=$(`<p> </p>`)
+    const p1=$(`<p> </p>`)
+    personal.addClass(`card`)
+    const src=array1[i].img
+    const img=$(`<img/>`)
+    img.css({
+        'width':'300px',
+         'height':'250px'
+    })
+    img.attr("src", src);
+    h1.append(array1[i].name);
+    personal.append(h1);
+    personal.append(img);
+    p.append(array1[i].price);
+    p.addClass(`price`)
+    personal.append(p);
+
+    p1.append(array1[i].des);
+    personal.append(p1);
+    
+   const btn=$(`<p><button>add To Carde</button></P>`)
+   btn.addClass(`card`)
+   personal.append(btn);
+   personal.appendTo(item4)
+ 
+ }
+item4.hide();
+
+const four = $(".personal1");
+  four.on("click", () => {
+    catagories.hide();
+    item4.show();
   });
 
 
  
-//  const three = $(".Elec&Media");
-//  three.on("click", () => {
-//    catag.hide();
-//    item3.show();
-//  });
+
 
 
 
